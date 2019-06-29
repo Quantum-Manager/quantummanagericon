@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="quickicon">
+	<name>Quantum Manager Quick Icon</name>
+	<creationDate>30.06.2018</creationDate>
+	<version>1.0</version>
+	<author>Cymbal</author>
+	<authorEmail>cymbal@delo-design.ru</authorEmail>
+	<authorUrl>https://delo-design.ru</authorUrl>
+	<copyright>Copyright (C) 2019 "Delo Design". All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description>Quantum Manager Quick Icon</description>
+
+	<scriptfile>script.php</scriptfile>
+
+	<files>
+		<filename plugin="quantummanagericon">quantummanagericon.php</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="context" type="text" default="mod_quickicon" description="QUICKICON_GROUP" label="GROUP" />
+				<field name="displayedtext" type="text" default="" description="ICON_LEGEND" label="ICON_LEGEND" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
