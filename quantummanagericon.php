@@ -1,11 +1,10 @@
 <?php
 /**
- * @package    Quantummanagericon
- *
- * @author     Cymbal <cymbal@delo-design.ru>
- * @copyright  Copyright (C) 2019 "Delo Design". All rights reserved.
- * @license    GNU General Public License version 2 or later; see LICENSE.txt
- * @link       https://delo-design.ru
+ * @package    quantummanagermedia
+ * @author     Dmitry Tsymbal <cymbal@delo-design.ru>
+ * @copyright  Copyright © 2019 Delo Design & NorrNext. All rights reserved.
+ * @license    GNU General Public License version 3 or later; see license.txt
+ * @link       https://www.norrnext.com
  */
 
 defined('_JEXEC') or die('Restricted access');
@@ -30,7 +29,7 @@ class plgQuickiconQuantummanagericon  extends JPlugin
 		return array(
 			array(
 				'link' => 'index.php?option=com_quantummanager',
-				'image' => 'pictures',
+				'image' => 'folder-open',
 				'text' => 'Quantum Manager',
 				'id' => 'plg_quickicon_quantummanageicon',
 			)

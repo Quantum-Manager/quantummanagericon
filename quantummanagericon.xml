@@ -3,11 +3,11 @@
 	<name>Quantum Manager Quick Icon</name>
 	<creationDate>30.06.2018</creationDate>
 	<version>1.0</version>
-	<author>Cymbal</author>
+	<author>Tsymbal</author>
 	<authorEmail>cymbal@delo-design.ru</authorEmail>
-	<authorUrl>https://delo-design.ru</authorUrl>
-	<copyright>Copyright (C) 2019 "Delo Design". All rights reserved.</copyright>
-	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorUrl>https://www.norrnext.com</authorUrl>
+	<copyright>Copyright © 2019 Delo Design &amp; NorrNext. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later; see license.txt</license>
 	<description>Quantum Manager Quick Icon</description>
 
 	<scriptfile>script.php</scriptfile>
@@ -24,4 +24,10 @@
 			</fieldset>
 		</fields>
 	</config>
+
+	<updateservers>
+		<server type="extension" priority="1" name="quantummanagericon">https://hika.su/update/free/plg_quantummanagericon.xml</server>
+	</updateservers>
+
+
 </extension>
