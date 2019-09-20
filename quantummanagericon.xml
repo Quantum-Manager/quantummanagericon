@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="2.5" type="plugin" group="quickicon">
 	<name>Quantum Manager Quick Icon</name>
-	<creationDate>30.06.2018</creationDate>
-	<version>1.0</version>
+	<creationDate>30.06.2019</creationDate>
+	<version>1.1</version>
 	<author>Tsymbal</author>
 	<authorEmail>cymbal@delo-design.ru</authorEmail>
 	<authorUrl>https://www.norrnext.com</authorUrl>
@@ -24,10 +24,5 @@
 			</fieldset>
 		</fields>
 	</config>
-
-	<updateservers>
-		<server type="extension" priority="1" name="quantummanagericon">https://hika.su/update/free/plg_quantummanagericon.xml</server>
-	</updateservers>
-
 
 </extension>
