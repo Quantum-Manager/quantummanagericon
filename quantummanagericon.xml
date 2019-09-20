@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="2.5" type="plugin" group="quickicon">
+<extension version="3.8" type="plugin" group="quickicon" method="upgrade">
 	<name>Quantum Manager Quick Icon</name>
 	<creationDate>30.06.2019</creationDate>
-	<version>1.1</version>
+	<version>1.2</version>
 	<author>Tsymbal</author>
 	<authorEmail>cymbal@delo-design.ru</authorEmail>
 	<authorUrl>https://www.norrnext.com</authorUrl>
