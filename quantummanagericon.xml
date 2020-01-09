@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.8" type="plugin" group="quickicon" method="upgrade">
-	<name>Quantum Manager Quick Icon</name>
+	<name>PLG_QUANTUMMANAGERICON</name>
 	<creationDate>30.06.2019</creationDate>
 	<version>1.3</version>
 	<author>Tsymbal</author>
@@ -8,7 +8,7 @@
 	<authorUrl>https://www.norrnext.com</authorUrl>
 	<copyright>Copyright © 2019 Delo Design &amp; NorrNext. All rights reserved.</copyright>
 	<license>GNU General Public License version 3 or later; see license.txt</license>
-	<description>Quantum Manager Quick Icon</description>
+	<description>PLG_QUANTUMMANAGERICON_XML_DESCRIPTION</description>
 
 	<scriptfile>script.php</scriptfile>
 
