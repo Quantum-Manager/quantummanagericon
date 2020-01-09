@@ -2,7 +2,7 @@
 <extension version="3.8" type="plugin" group="quickicon" method="upgrade">
 	<name>Quantum Manager Quick Icon</name>
 	<creationDate>30.06.2019</creationDate>
-	<version>1.2</version>
+	<version>1.3</version>
 	<author>Tsymbal</author>
 	<authorEmail>cymbal@delo-design.ru</authorEmail>
 	<authorUrl>https://www.norrnext.com</authorUrl>
@@ -12,8 +12,16 @@
 
 	<scriptfile>script.php</scriptfile>
 
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_quickicon_quantummanagermedia.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_quickicon_quantummanagermedia.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_quickicon_quantummanagermedia.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_quickicon_quantummanagermedia.sys.ini</language>
+	</languages>
+
 	<files>
 		<filename plugin="quantummanagericon">quantummanagericon.php</filename>
+		<folder>language</folder>
 	</files>
 
 	<config>
