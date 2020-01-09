@@ -13,10 +13,10 @@
 	<scriptfile>script.php</scriptfile>
 
 	<languages folder="language">
-		<language tag="en-GB">en-GB/en-GB.plg_quickicon_quantummanagermedia.ini</language>
-		<language tag="en-GB">en-GB/en-GB.plg_quickicon_quantummanagermedia.sys.ini</language>
-		<language tag="ru-RU">ru-RU/ru-RU.plg_quickicon_quantummanagermedia.ini</language>
-		<language tag="ru-RU">ru-RU/ru-RU.plg_quickicon_quantummanagermedia.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_quickicon_quantummanagericon.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_quickicon_quantummanagericon.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_quickicon_quantummanagericon.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_quickicon_quantummanagericon.sys.ini</language>
 	</languages>
 
 	<files>
