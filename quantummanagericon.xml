@@ -2,7 +2,7 @@
 <extension version="3.8" type="plugin" group="quickicon" method="upgrade">
 	<name>PLG_QUANTUMMANAGERICON</name>
 	<creationDate>30.06.2019</creationDate>
-	<version>1.3</version>
+	<version>1.3.1</version>
 	<author>Tsymbal</author>
 	<authorEmail>cymbal@delo-design.ru</authorEmail>
 	<authorUrl>https://www.norrnext.com</authorUrl>
@@ -28,7 +28,6 @@
 		<fields name="params">
 			<fieldset name="basic">
 				<field name="context" type="text" default="mod_quickicon" description="QUICKICON_GROUP" label="GROUP" />
-				<field name="displayedtext" type="text" default="" description="ICON_LEGEND" label="ICON_LEGEND" />
 			</fieldset>
 		</fields>
 	</config>
