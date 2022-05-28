@@ -32,7 +32,7 @@ class plgQuickiconQuantummanagericon extends JPlugin
 
 		$icon = 'folder-open';
 
-		if (!QuantummanagerHelper::isJoomla4())
+		if (QuantummanagerHelper::isJoomla4())
 		{
 			$icon = 'icon-folder-open';
 		}
