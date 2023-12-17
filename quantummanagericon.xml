@@ -9,6 +9,7 @@
 	<copyright>Copyright © 2019 Delo Design &amp; NorrNext. All rights reserved.</copyright>
 	<license>GNU General Public License version 3 or later; see license.txt</license>
 	<description>PLG_QUANTUMMANAGERICON_XML_DESCRIPTION</description>
+	<namespace path="src">Joomla\Plugin\QuickIcon\QuantumManagerIcon</namespace>
 
 	<scriptfile>script.php</scriptfile>
 
@@ -20,7 +21,8 @@
 	</languages>
 
 	<files>
-		<filename plugin="quantummanagericon">quantummanagericon.php</filename>
+		<folder>services</folder>
+		<folder plugin="quantummanagericon">src</folder>
 		<folder>language</folder>
 	</files>
 

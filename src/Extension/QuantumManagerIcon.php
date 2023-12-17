@@ -1,4 +1,4 @@
-<?php
+<?php namespace Joomla\Plugin\QuickIcon\QuantumManagerIcon\Extension;
 /**
  * @package    quantummanagericon
  * @author     Dmitry Tsymbal <cymbal@delo-design.ru>
@@ -12,9 +12,9 @@ defined('_JEXEC') or die('Restricted access');
 use Joomla\CMS\Factory;
 
 /**
- * Class plgQuickiconQuantummanagericon
+ * Class QuantumManagerIcon
  */
-class plgQuickiconQuantummanagericon extends JPlugin
+class QuantumManagerIcon extends JPlugin
 {
 
 	public function onGetIcons($context)
@@ -28,24 +28,14 @@ class plgQuickiconQuantummanagericon extends JPlugin
 			return;
 		}
 
-		JLoader::register('QuantummanagerHelper', JPATH_ROOT . '/administrator/components/com_quantummanager/helpers/quantummanager.php');
-
-		$icon = 'folder-open';
-
-		if (QuantummanagerHelper::isJoomla4())
-		{
-			$icon = 'icon-folder-open';
-		}
-
 		return [
 			[
 				'link'  => 'index.php?option=com_quantummanager',
-				'image' => $icon,
+				'image' => 'icon-folder-open',
 				'text'  => 'Quantum Manager',
 				'id'    => 'plg_quickicon_quantummanageicon',
 			]
 		];
 	}
-
 
 }
