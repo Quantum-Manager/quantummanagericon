@@ -10,11 +10,12 @@
 defined('_JEXEC') or die('Restricted access');
 
 use Joomla\CMS\Factory;
+use Joomla\CMS\Plugin\CMSPlugin;
 
 /**
  * Class QuantumManagerIcon
  */
-class QuantumManagerIcon extends JPlugin
+class QuantumManagerIcon extends CMSPlugin
 {
 
 	public function onGetIcons($context)
