@@ -1,4 +1,7 @@
-<?php namespace Joomla\Plugin\QuickIcon\QuantumManagerIcon\Extension;
+<?php
+
+namespace Joomla\Plugin\QuickIcon\QuantumManagerIcon\Extension;
+
 /**
  * @package    quantummanagericon
  * @author     Dmitry Tsymbal <cymbal@delo-design.ru>
@@ -7,36 +10,45 @@
  * @link       https://www.norrnext.com
  */
 
-defined('_JEXEC') or die('Restricted access');
+defined('_JEXEC') or die;
 
 use Joomla\CMS\Factory;
 use Joomla\CMS\Plugin\CMSPlugin;
+use Joomla\Event\SubscriberInterface;
+use Joomla\Module\Quickicon\Administrator\Event\QuickIconsEvent;
 
-/**
- * Class QuantumManagerIcon
- */
-class QuantumManagerIcon extends CMSPlugin
+class QuantumManagerIcon extends CMSPlugin implements SubscriberInterface
 {
 
-	public function onGetIcons($context)
+	public static function getSubscribedEvents(): array
 	{
+		return [
+			'onGetIcons' => 'onGetIcons',
+		];
+	}
+
+	public function onGetIcons(QuickIconsEvent $event): void
+	{
+		$context = $event->getContext();
 
 		if (
 			$context !== $this->params->get('context', 'mod_quickicon') ||
-			!Factory::getUser()->authorise('core.manage', 'com_quantummanager')
+			!Factory::getApplication()->getIdentity()->authorise('core.manage', 'com_quantummanager')
 		)
 		{
+			$event->addArgument('result', []);
+
 			return;
 		}
 
-		return [
+		$event->addArgument('result', [
 			[
 				'link'  => 'index.php?option=com_quantummanager',
 				'image' => 'icon-folder-open',
 				'text'  => 'Quantum Manager',
 				'id'    => 'plg_quickicon_quantummanageicon',
 			]
-		];
+		]);
 	}
 
 }
