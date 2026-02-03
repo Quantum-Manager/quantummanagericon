@@ -36,19 +36,19 @@ class QuantumManagerIcon extends CMSPlugin implements SubscriberInterface
 			!Factory::getApplication()->getIdentity()->authorise('core.manage', 'com_quantummanager')
 		)
 		{
-			$event->addArgument('result', []);
-
 			return;
 		}
 
-		$event->addArgument('result', [
+		$result[] = [
 			[
 				'link'  => 'index.php?option=com_quantummanager',
 				'image' => 'icon-folder-open',
 				'text'  => 'Quantum Manager',
 				'id'    => 'plg_quickicon_quantummanageicon',
 			]
-		]);
+		];
+
+		$event->addArgument('result', $result);
 	}
 
 }
